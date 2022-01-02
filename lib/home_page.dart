@@ -105,10 +105,19 @@ class Homepage extends StatelessWidget {
                         builder: (context) {
                           return Container(
                             height: 200,
+                            padding: const EdgeInsets.symmetric(
+                              vertical: 50,
+                            ),
                             color: ColorPalette.whiteColor,
                             child: Column(
                               children: const [
-                                Text('Update Photo'),
+                                Text(
+                                  'Update Photo',
+                                  style: TextStyle(
+                                      fontSize: 22,
+                                      color: ColorPalette.primaryColor,
+                                      fontWeight: FontWeight.w500),
+                                ),
                               ],
                             ),
                           );
