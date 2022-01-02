@@ -104,19 +104,54 @@ class Homepage extends StatelessWidget {
                         context: context,
                         builder: (context) {
                           return Container(
-                            height: 200,
+                            height: 290,
                             padding: const EdgeInsets.symmetric(
                               vertical: 50,
                             ),
                             color: ColorPalette.whiteColor,
                             child: Column(
-                              children: const [
-                                Text(
+                              children: [
+                                const Text(
                                   'Update Photo',
                                   style: TextStyle(
                                       fontSize: 22,
                                       color: ColorPalette.primaryColor,
                                       fontWeight: FontWeight.w500),
+                                ),
+                                const SizedBox(
+                                  height: 12,
+                                ),
+                                const Text(
+                                  'You Just able to Change\nPicture Profile Once',
+                                  style: TextStyle(
+                                    // fontWeight: FontWeight.w500,
+                                    color: ColorPalette.greyColor,
+                                    fontSize: 18,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                const SizedBox(
+                                  height: 30,
+                                ),
+                                // ignore: sized_box_for_whitespace
+                                Container(
+                                  width: 224,
+                                  height: 55,
+                                  child: RaisedButton(
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    color: ColorPalette.orangeColor,
+                                    onPressed: () {},
+                                    child: const Text(
+                                      'Continue',
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w600,
+                                        color: ColorPalette.whiteColor,
+                                      ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),
